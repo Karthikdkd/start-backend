@@ -1,0 +1,32 @@
+import mongoose from 'mongoose';
+
+const patientSchema = mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    }, 
+    diagnosedWith: {
+        type: String,
+        required: true
+    },
+    address: {
+        type: String,
+        required: true
+    },
+    bloodGrop: {
+        type: String,
+        required: true
+    },
+    gender: {
+        type: String,
+        enum: ["M", "F"],
+        required: true
+    },
+    admittedIn: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Hospital",
+        required: true
+    },
+},{timeStamps:true});
+
+export const Patient = mongoose.model('Patient', patientSchema);

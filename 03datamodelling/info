@@ -1,0 +1,12 @@
+/**
+ * sql -> structured Query language
+ * noSql -> not only structured Query language
+ * 
+ * sql -> MySQL, PostgreSQL, Oracle, MS-SQL Server, etc
+ * noSql ->  MongoDB, HBase, Neo4j, Cassandra, etc
+ * 
+ * MongoBB -> mongoose -> Mongoose is an Object Data Modeling (ODM) library for MongoDB. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
+ * 
+ * model name in MongoBB appends s to the given name and stores in lowecase
+ * 
+ * */   
